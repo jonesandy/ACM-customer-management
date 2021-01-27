@@ -1,9 +1,20 @@
+using System;
 using Xunit;
 
 namespace ACM.BusinessLayer.Tests
 {
     public class CustomerTests
     {
+        [Fact]
+        public void Should_Have_GUID_Id_When_Created()
+        {
+            var sut = new Customer();
+
+            var id = sut.CustomerId;
+
+            Assert.IsType<Guid>(id);
+        }
+
         [Trait("Name", "Modify")]
         [Fact]
         public void Should_Set_FullName_Correctly()
@@ -46,6 +57,36 @@ namespace ACM.BusinessLayer.Tests
             var result = sut.FullName;
 
             Assert.Equal(expectedName, result);
+        }
+
+        [Fact]
+        public void Should_Validate_Correct_Customer_Data()
+        {
+            var sut = new Customer()
+            {
+                LastName = "Doe",
+                EmailAddress = "none@none.none"
+            };
+
+            var result = sut.ValidCustomerData();
+
+            Assert.True(result);
+        }
+
+        [Theory]
+        [InlineData("", "none@none.none")]
+        [InlineData("Doe", "")]
+        public void Should_Validate_Correctly_With_Missing_Customer_Data(string lastName, string email)
+        {
+            var sut = new Customer()
+            {
+                LastName = lastName,
+                EmailAddress = email
+            };
+
+            var result = sut.ValidCustomerData();
+
+            Assert.False(result);
         }
     }
 }

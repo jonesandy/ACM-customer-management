@@ -15,6 +15,19 @@ namespace ACM.BusinessLayer
         public Customer()
         {
             CustomerCount++;
+            CustomerId = Guid.NewGuid();
+        }
+
+        /// <summary>
+        /// Validates that key properties are not empty or null
+        /// </summary>
+        public bool ValidCustomerData()
+        {
+            var isValid = true;
+            if (string.IsNullOrWhiteSpace(LastName)) isValid = false;
+            if (string.IsNullOrWhiteSpace(EmailAddress)) isValid = false;
+
+            return isValid;
         }
 
         private string GenerateFullName()
