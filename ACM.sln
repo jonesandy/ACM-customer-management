@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACM.BusinessLayer", "src\ACM.BusinessLayer\ACM.BusinessLayer.csproj", "{AB7CB673-AD2D-4F1F-A556-A9D6D5A7CCFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACM.BusinessLayer", "src\ACM.BusinessLayer\ACM.BusinessLayer.csproj", "{AB7CB673-AD2D-4F1F-A556-A9D6D5A7CCFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACM.BusinessLayer.Tests", "tests\ACM.BusinessLayer.Tests\ACM.BusinessLayer.Tests.csproj", "{5E8993E2-540F-4397-BB6A-6D066C1D05A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACM.BusinessLayer.Tests", "tests\ACM.BusinessLayer.Tests\ACM.BusinessLayer.Tests.csproj", "{5E8993E2-540F-4397-BB6A-6D066C1D05A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACM.Repositories", "src\ACM.Repositories\ACM.Repositories.csproj", "{597D8C8E-41A0-4EB2-8FC7-85EC2E50B252}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACM.Repositories.Tests", "tests\ACM.Repositories.Tests\ACM.Repositories.Tests.csproj", "{BCD25353-8210-4003-A74D-E4A5028FFE1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{5E8993E2-540F-4397-BB6A-6D066C1D05A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E8993E2-540F-4397-BB6A-6D066C1D05A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E8993E2-540F-4397-BB6A-6D066C1D05A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{597D8C8E-41A0-4EB2-8FC7-85EC2E50B252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{597D8C8E-41A0-4EB2-8FC7-85EC2E50B252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{597D8C8E-41A0-4EB2-8FC7-85EC2E50B252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{597D8C8E-41A0-4EB2-8FC7-85EC2E50B252}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCD25353-8210-4003-A74D-E4A5028FFE1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCD25353-8210-4003-A74D-E4A5028FFE1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCD25353-8210-4003-A74D-E4A5028FFE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCD25353-8210-4003-A74D-E4A5028FFE1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,13 +9,17 @@ namespace ACM.BusinessLayer
         public string LastName { get; set; }
         public string FullName => GenerateFullName();
         public string EmailAddress { get; set; }
-        public Guid CustomerId { get; private set; }
+        public int CustomerId { get; set; }
 
 
         public Customer()
         {
             CustomerCount++;
-            CustomerId = Guid.NewGuid();
+        }
+        
+        public Customer(int id)
+        {
+            CustomerId = id;
         }
 
         /// <summary>

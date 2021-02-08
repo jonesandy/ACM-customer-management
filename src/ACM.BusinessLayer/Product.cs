@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ACM.BusinessLayer
+﻿namespace ACM.BusinessLayer
 {
-    class Product
+    public class Product
     {
         public string Name { get; set; }
         public string Description { get; set; }
@@ -22,16 +18,6 @@ namespace ACM.BusinessLayer
             if (CurrentPrice == null) isValid = false;
 
             return isValid;
-        }
-
-        public void Retrieve()
-        {
-
-        }
-
-        public void Save()
-        {
-
         }
     }
 }

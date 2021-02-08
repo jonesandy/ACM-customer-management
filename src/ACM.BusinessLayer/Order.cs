@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ACM.BusinessLayer
 {
@@ -20,16 +18,6 @@ namespace ACM.BusinessLayer
             if (OrderDate == null) isValid = false;
 
             return isValid;
-        }
-
-        public void Retrieve()
-        {
-
-        }
-
-        public void Save()
-        {
-
         }
     }
 }

@@ -1,20 +1,9 @@
-using System;
 using Xunit;
 
 namespace ACM.BusinessLayer.Tests
 {
     public class CustomerTests
     {
-        [Fact]
-        public void Should_Have_GUID_Id_When_Created()
-        {
-            var sut = new Customer();
-
-            var id = sut.CustomerId;
-
-            Assert.IsType<Guid>(id);
-        }
-
         [Trait("Name", "Modify")]
         [Fact]
         public void Should_Set_FullName_Correctly()
